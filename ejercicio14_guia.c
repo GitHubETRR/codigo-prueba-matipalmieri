@@ -11,4 +11,5 @@ int main(){
         angf=180-ang12;
         printf("Su tercer ángulo mide %f",angf);
     }
+    return 0;
 }

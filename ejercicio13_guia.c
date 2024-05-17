@@ -9,4 +9,5 @@ int main (){
     scanf("%f",&kilos);
     precio=kilos*dolares;
     printf("En total, gastaste %f dólares",precio);
+    return 0;
 }
