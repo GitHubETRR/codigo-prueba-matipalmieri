@@ -2,7 +2,7 @@
 
 int main(){
 
-    long int numero,cifra;
+    int numero,cifra;
     printf("Ingrese un numero ENTERO de 2 o más cifras: ");
     scanf("%f",&numero);
     if(numero<100){
@@ -13,4 +13,4 @@ int main(){
         printf("La última cifra de tu número es %f.",cifra);
     }
     return 0;
-} //NO ESTA TERMINAADOOO
+}
