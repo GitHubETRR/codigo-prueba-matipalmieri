@@ -4,7 +4,8 @@ cuenta que no se pueden realizar divisiones por cero. */
 #include <stdio.h>
 #include <math.h>
 int main(){
-    float num1,num2,res,elec;
+    float num1,num2,res;
+    int elec;
     char oper;
     printf("Ingrese dos números: ");
     scanf("%f %f",&num1,&num2);
