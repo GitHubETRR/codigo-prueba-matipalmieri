@@ -8,4 +8,4 @@ int main(){
     printf("Su longitud en pies es equivalente a %f \n",pies);
     printf("Además, equivale a %f pulgadas",pulgadas);
     return 0;
-    }
+}

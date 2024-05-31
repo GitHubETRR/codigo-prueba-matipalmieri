@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main (){
-
     float precio,kilos,dolares;
     printf("¿Cuál es el precio en dólares por kilo? ");
     scanf("%f",&dolares);

@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
     int numero,cifra;
     printf("Ingrese un numero ENTERO de 2 o más cifras: ");
     scanf("%f",&numero);

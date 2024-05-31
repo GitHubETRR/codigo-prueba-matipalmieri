@@ -3,7 +3,6 @@
 float const pi=3.14;
 
 int main(){
-
     float radio,altura,area,volumen;
     printf("Ingrese primero el radio y luego la altura de tu cilindro: ");
     scanf("%f%f",&radio,&altura);

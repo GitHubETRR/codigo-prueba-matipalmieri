@@ -7,7 +7,7 @@ int main(){
     if(ang12>180){
         printf("Algo anda mal, los ángulos suman más de 180");
     }
-    else if (ang12<180){
+    else if(ang12<180){
         angf=180-ang12;
         printf("Su tercer ángulo mide %f",angf);
     }

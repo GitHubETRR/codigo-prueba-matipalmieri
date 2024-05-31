@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(){
-    
     int numero,digito1,digito2,digito3,digito4;
     printf("Ingrese un número entero de 4 dígitos: ");
     scanf("%d",&numero);

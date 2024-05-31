@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(){
-    
     int numero1,numero2,suma,checkeo;
     printf("Ingrese el primer número: ");
     scanf("%d",&numero1);

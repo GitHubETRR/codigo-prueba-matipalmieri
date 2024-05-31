@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(){
-
     int cifra1,cifra2,cifra3,numero;
     printf("Ingrese un número entero de 3 cifras: ");
     scanf("%d",&numero);

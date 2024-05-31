@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
     int dias,meses,years,fecha;
     printf("Introduce una fecha en el formato DDMMAAAA: ");
     scanf("%d",&fecha);

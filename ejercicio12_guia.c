@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main (){
-
     int meses,years,dias;
     printf("¿Cuantos años tenes? ");
     scanf("%d",&years);

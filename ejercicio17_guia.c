@@ -1,6 +1,5 @@
 #include <stdio.h>
 int main(){
-
     unsigned int hora1,hora2,min1,min2,seg1,seg2;
     unsigned int horaf,minf,segf;
     printf("Ingrese el primer tiempo a sumar, expresado en horas, minutos y segundos correspondientemente: ");

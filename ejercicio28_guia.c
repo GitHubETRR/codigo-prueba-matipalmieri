@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(){
-    
     float coef,coefPrincipal,ordenada,raiz1,raiz2;
     printf("Ingrese el valor de A: ");
     scanf("%f",&coefPrincipal);

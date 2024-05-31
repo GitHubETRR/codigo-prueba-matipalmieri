@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(){
-    
     int numero,checkeo;
     printf("Ingrese un número entero: ");
     scanf("%d",&numero);

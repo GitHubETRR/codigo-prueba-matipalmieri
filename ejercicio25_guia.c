@@ -3,7 +3,6 @@
 float const pi=3.14;
 
 int main(){
-
     float horas,antiguedad,sueldoneto,sueldo,plus;
     printf("Ingrese la cantidada de horas que trabajaste y hace cuantos años trabajas: ");
     scanf("%f%f",&horas,&antiguedad);

@@ -1,9 +1,7 @@
 #include <stdio.h>
-
-float const pi=3.14
+#include pi=3.14
 
 int main(){
-
     float area,radio;
     printf("Ingrese el radio tu circulo: ");
     scanf("%f",&radio);
