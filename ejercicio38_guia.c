@@ -1,6 +1,6 @@
 /*38.	Desarrollar un algoritmo que ingrese dos números y luego un carácter que indique una operación 
 (S-Suma, R-Resta, M-Multiplicación, D-División) y luego realice la operación correspondiente, tener en 
-cuenta que no se pueden realizar divisiones por cero. */
+cuenta que no se pueden realizar divisiones por cero. */ tutuca estuvo aqui
 #include <stdio.h>
 #include <math.h>
 int main(){
@@ -12,7 +12,7 @@ int main(){
     fflush(stdin);
     printf("Ahora indique una operación que quiera realizar (S-Suma, R-Resta, M-Multiplicación, D-División)");
     scanf("%c",&oper);
-    fflush(stdin);
+    fflush(|stdin);
     if(oper==83) res=num1+num2;
     else if(oper==82){
         printf("Ingrese 1 si quiere restar el segundo numero al primero, sino, ingrese otro numero: ");
