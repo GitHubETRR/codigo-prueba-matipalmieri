@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main(){
-    float cm,pulgadas,
-    pies,var1=2.54,var2=30.48;
+    float cm,pulgadas,pies,var1=2.54,var2=30.48;
     printf("Ingrese su longitud en centimetros: ");
     scanf("%f",&cm);
     pulgadas=cm/var1;

@@ -3,11 +3,9 @@ disparos, registrando las coordenadas (x, y) de cada disparo. Indicar cuántos d
 cada cuadrante y cuantos dieron en el blanco.*/
 #include <stdio.h>
 
-#define PARTICIPANTES 5
-#define TIROS 10
-
 int main(){
     int q1,q2,q3,q4,objetivo,i,j;
+    int PARTICIPANTES=5,TIROS=10;
     float x,y;
     for (i = 0; i < PARTICIPANTES; i++){
         printf("Participante %d:\n", i + 1);
