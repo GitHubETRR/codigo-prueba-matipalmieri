@@ -22,4 +22,5 @@ int ordenarMayor(int *a, int *b, int *c){
     else if (b<c && c<a) &v2,&v1,&v3;
     else if (c<a && b<a) &v1,&v2,&v3;
     else &v1,&v3,&v2;
+    no esta terminado
 }
