@@ -1,0 +1,12 @@
+/*Ingresar una matriz, de NxN valores en forma aleatoria, entre 1 y 30, donde N es 5, 
+informar el valor máximo y su ubicación.*/ 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+    int matr[5][5];
+    srand(time(NULL));
+    
+}

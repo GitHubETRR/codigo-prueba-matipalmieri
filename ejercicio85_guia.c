@@ -4,8 +4,6 @@ posición 5 antes que la posición 2.*/
 
 #include <stdio.h>
 
-int pedirDatos();
-
 int main(){
     int vect[10]={0};
     int c,val;
