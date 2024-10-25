@@ -54,7 +54,7 @@ int main(){
         printf("0. Salir\n");
         printf("Elige una opción: ");
         scanf("%d", &opcion); //si se ingresa algo que no sea un número hace cualquiera
-        switch(opcion) {
+        switch(opcion){
             case 1:
                 printf("¿Cuántos elementos quieres cargar (máximo %d)? ", MAX);
                 scanf("%d", &elementos);
@@ -112,7 +112,7 @@ int main(){
     return 0;
 }
 void cargar(int vect[], int unNum){
-    for (int i = 0; i < unNum; i++) {
+    for (int i = 0; i < unNum; i++){
         printf("Introduce el valor %d: ", i + 1);
         scanf("%d", &vect[i]);
     }
@@ -129,7 +129,7 @@ int leerMarca(int vect[]){
 int veces(int valor, int vect[], int unNum){
     int contador=0;
     for (int i=0;i<unNum;i++){
-        if (vect[i] == valor) {
+        if (vect[i] == valor){
             contador++;
         }
     }
@@ -144,7 +144,7 @@ void invertirOrden(int vect[], int unNum){
 }
 void sumaElementos(int vect[], int unNum){
     int suma=0;
-    for (int i=0;i<unNum;i++) {
+    for (int i=0;i<unNum;i++){
         suma+=vect[i];
     }
     printf("La suma de los elementos es: %d\n",suma);
@@ -184,10 +184,10 @@ void valoresMultiplosDelUltimo(int vect[], int unNum){
     }
     printf("\n");
 }
-void valorMaximo(int vect[], int unNum) {
+void valorMaximo(int vect[], int unNum){
     int maximo=vect[0],contador=1,posicion=0;
-    for (int i=1;i<unNum;i++) {
-        if (vect[i]>maximo) {
+    for (int i=1;i<unNum;i++){
+        if (vect[i]>maximo){
             maximo=vect[i];
             contador=1;
             posicion=i;
@@ -200,23 +200,23 @@ void valorMaximo(int vect[], int unNum) {
 }
 void valoresPares(int vect[],int unNum){
     printf("Valores pares:\n");
-    for (int i=0;i<unNum;i++) {
+    for (int i=0;i<unNum;i++){
         if (vect[i]%2==0){
             printf("%d ",vect[i]);
         }
     }
     printf("\n");
 }
-void valoresImpares(int vect[],int unNum) {
+void valoresImpares(int vect[],int unNum){
     printf("Valores impares:\n");
-    for (int i=0;i<unNum;i++) {
-        if (vect[i]%2!=0) {
+    for (int i=0;i<unNum;i++){
+        if (vect[i]%2!=0){
             printf("%d ",vect[i]);
         }
     }
     printf("\n");
 }
-void valoresPosicionesPares(int vect[], int unNum) {
+void valoresPosicionesPares(int vect[], int unNum){
     printf("Valores en posiciones pares:\n");
     for (int i=0;i<unNum;i+=2){
         printf("%d ",vect[i]);
