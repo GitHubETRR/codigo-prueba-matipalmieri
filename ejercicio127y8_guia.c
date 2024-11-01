@@ -1,6 +1,6 @@
 /*127.	Dada la estructura struct producto {int id; float precio}; desarrollar una función que reciba 
-dicha estructura como puntero y aplique un descuento del 20% al precio.*/
-/*128.	Dada la estructura del ejercicio 2, desarrolle una función que reciba dos estructuras producto
+dicha estructura como puntero y aplique un descuento del 20% al precio.
+128.	Dada la estructura del ejercicio 2, desarrolle una función que reciba dos estructuras producto
 y devuelva aquella que tiene el precio más caro.*/
 #include <stdio.h>
 
