@@ -1,13 +1,12 @@
 /*Desarrollar un programa en C que permita ingresar información de empleados, procesarla y mostrar 
 resultados relevantes a través de un menú interactivo*/
-
 #include <stdio.h>
 #include <string.h>
 #define EMPLEADOS_MAX 5
 #define LETRAS_MAX 50
 
 void ingresarDatos(void);
-void procesarDatos(void); // prototipos
+void procesarDatos(void);
 void mostrarDatos(void);
 
 struct Empleado{
@@ -15,13 +14,14 @@ struct Empleado{
     int edad;
     float salario;
 };
+
 struct Empleado empleados[EMPLEADOS_MAX];
 int numEmpleados = 0;
 
 int main(){
     int opcion;
     do{
-        printf("\n- - - - Menú - - - - \n");
+        printf("\n - - - - Menú - - - - \n");
         printf("1. Ingresar datos de un empleado.\n");
         printf("2. Procesar y mostrar información relevante.\n");
         printf("3. Salir.\n");
@@ -46,8 +46,8 @@ int main(){
 }
 
 void ingresarDatos(){
-    if (numEmpleados<EMPLEADOS_MAX){
-        printf("\n------ Datos del empleado %d ------\n", numEmpleados + 1);
+    if (numEmpleados < EMPLEADOS_MAX){
+        printf("\n ------ Datos del empleado %d ------ \n", numEmpleados + 1);
         printf("Ingrese el nombre del empleado: ");
         getchar();  
         fgets(empleados[numEmpleados].nombre, LETRAS_MAX, stdin);
