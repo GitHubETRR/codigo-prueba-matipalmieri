@@ -44,11 +44,10 @@ int main(){
     }while(opcion != 3);
     return 0;
 }
-
 void ingresarDatos(){
     if (numEmpleados < EMPLEADOS_MAX){
         printf("\n ------ Datos del empleado %d ------ \n", numEmpleados + 1);
-        printf("Ingrese el nombre del empleado: ");
+        printf("Ingrese el nombre y apellido del empleado: ");
         getchar();  
         fgets(empleados[numEmpleados].nombre, LETRAS_MAX, stdin);
         printf("Ingrese la edad del empleado: ");
@@ -60,7 +59,6 @@ void ingresarDatos(){
     }
     else printf("\nNo se pueden ingresar más empleados.\n");
 }
-
 void procesarDatos(){
     if (numEmpleados == 0){
         printf("\nNo se han ingresado empleados.\n");
@@ -78,11 +76,10 @@ void procesarDatos(){
         }
     }
     float promedioSalarios = sumaSalarios / numEmpleados;
-    printf("\nPromedio de salarios: $%.2f\n", promedioSalarios);
-    printf("Empleado con el salario más alto: %s\n", nombreSalarioMaximo);
+    printf("Promedio de salarios: $%.2f\n", promedioSalarios);
+    printf("Empleado con el salario más alto: %s", nombreSalarioMaximo);
 }
-
 void mostrarDatos(){
     printf("\n - - - Información de Empleados - - - \n");
-    for (int i = 0; i < numEmpleados; i++) printf("%d. Nombre: %s, Edad: %d, Salario: $%.2f\n", i + 1, empleados[i].nombre,empleados[i].edad,empleados[i].salario);
+    for (int i = 0; i < numEmpleados; i++) printf("%d. Nombre: %sEdad: %d, Salario: $%.2f\n\n", i + 1, empleados[i].nombre,empleados[i].edad,empleados[i].salario);
 }
