@@ -7,7 +7,7 @@ resultados relevantes a través de un menú interactivo*/
 #define LETRAS_MAX 50
 
 void ingresarDatos(void);
-void procesarDatos(void);
+void procesarDatos(void); // prototipos
 void mostrarDatos(void);
 
 struct Empleado{
@@ -15,7 +15,6 @@ struct Empleado{
     int edad;
     float salario;
 };
-
 struct Empleado empleados[EMPLEADOS_MAX];
 int numEmpleados = 0;
 
@@ -52,13 +51,12 @@ void ingresarDatos(){
         printf("Ingrese el nombre del empleado: ");
         getchar();  
         fgets(empleados[numEmpleados].nombre, LETRAS_MAX, stdin);
-        empleados[numEmpleados].nombre[strcspn(empleados[numEmpleados].nombre, "\n")] = 0;
         printf("Ingrese la edad del empleado: ");
         scanf("%d", &empleados[numEmpleados].edad);
         printf("Ingrese el salario del empleado (en dólares): ");
         scanf("%f", &empleados[numEmpleados].salario);
         numEmpleados++;
-        printf("\nDatos ingresados correctamente\n");
+        printf("Datos ingresados correctamente\n");
     }
     else printf("\nNo se pueden ingresar más empleados.\n");
 }
