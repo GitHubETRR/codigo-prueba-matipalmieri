@@ -22,7 +22,7 @@ int numEmpleados = 0;
 int main(){
     int eleccion;
     do{
-        printf("\n - - - - \033[1;42mMenu\033[0m - - - - \n");
+        printf("\n - - - - \033[32;2mMenu\033[0m - - - - \n");
         printf("1. Ingresar datos de un empleado.\n");
         printf("2. Procesar y mostrar informacion relevante.\n");
         printf("3. Salir.\n");
@@ -47,7 +47,7 @@ int main(){
 }
 void ingresarDatos(){
     if (numEmpleados < EMPLEADOS_MAX){
-        printf("\n ------ \033[1;46mDatos del empleado %d\033[0m ------ \n", numEmpleados + 1);
+        printf("\n ------ \033[36;2mDatos del empleado %d\033[0m ------ \n", numEmpleados + 1);
         printf("Ingrese el nombre y apellido del empleado: ");
         getchar();
         scanf(" %49[^\n]", empleados[numEmpleados].nombre); //esta es la unica forma que encontre para que lea hasta el salto de línea
@@ -81,7 +81,7 @@ void procesarDatos(){
     printf("Empleado con el salario más alto: %s\n", nombreSalarioMaximo);
 }
 void mostrarDatos(){
-    printf("\n - - - \033[1;44mInformacion de Empleados\033[0m - - - \n");
+    printf("\n - - - \033[34;2mInformacion de Empleados\033[0m - - - \n");
     for (int i=0 ; i < numEmpleados; i++){
         printf("\033[1;31m%d.\033[0m \033[4mNombre\033[0m: %s\n\033[4mEdad\033[0m: %d, \033[4mSalario\033[0m: $%.2f\n\n", 
                i + 1, empleados[i].nombre, empleados[i].edad, empleados[i].salario);
