@@ -40,7 +40,7 @@ int main(){
                 printf("\nChauuu\n");
                 break;
             default:
-                printf("\nOpción invalida, proba de nuevo.\n");
+                printf("\nEleccion invalida, proba de nuevo.\n");
         }
     } while (eleccion != 3);
     return 0;

@@ -10,11 +10,11 @@ de los datos cargados. No se permite el uso de archivos.*/
 #define MAX_LETRAS1 50
 #define MAX_LETRAS2 30
 
-void cargarLibros(Libro libros[], int *numLibros);
-void realizarVenta(Venta ventas[], int *numVentas, Libro libros[], int numLibros);
-float calcularTotalVentas(Venta ventas[], int numVentas);
-void ventasPorLibro(Venta ventas[], int numVentas);
-int buscarLibro(Libro libros[], int numLibros, char titulo[]);
+cargarLibros();
+realizarVenta();
+calcularTotalVentas();
+ventasPorLibro();
+buscarLibro();
 
 typedef struct{
     int dia;
@@ -34,11 +34,11 @@ typedef struct{
     Fecha fecha;
 }venta_t;
 
-int main() {
+int main(){
     Libro libros[MAX_LIBROS];
     Venta ventas[MAX_VENTAS];
     int numLibros = 0, numVentas = 0;
-    int opcion;
+    int eleccion;
     do{
         printf("\n--- Menu de Libreria ---\n");
         printf("1. Cargar libros\n");
@@ -47,8 +47,8 @@ int main() {
         printf("4. Mostrar ventas por libro\n");
         printf("5. Salir\n");
         printf("Seleccione una opcion: ");
-        scanf("%d", &opcion);
-        switch(opcion){
+        scanf("%d", &eleccion);
+        switch(eleccion){
             case 1:
                 cargarLibros(libros, &numLibros);
                 break;
@@ -62,16 +62,11 @@ int main() {
                 ventasPorLibro(ventas, numVentas);
                 break;
             case 5:
-                printf("¡Hasta luego!\n");
+                printf("Chauu\n");
                 break;
             default:
-                printf("Opcion invalida. Intente de nuevo.\n");
+                printf("Eleccion invalida, proba de nuevo\n");
         }
-    }while(opcion != 5);
+    }while(eleccion != 5);
     return 0;
 }
-
-void cargarLibros(Libro libros[], int *numLibros){
-    if (*numLibros >= MAX_LIBROS){
-        printf("No se pueden cargar mas libros.\n");
-    }
